@@ -67,5 +67,3 @@ def applyFns():
     
     rectangle = 20, 30
     print apply(rectangleArea, rectangle)
-    
-applyFns()
