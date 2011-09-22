@@ -29,7 +29,7 @@ def createDbFromFile():
     
     query = 'INSERT INTO food VALUES (?,?,?,?,?,?,?,?,?,?)'
     
-    for line in open('ABBREV.txt'):
+    for line in open('ABBREV.txt'): #get a copy of this file from http://www.mediafire.com/?k658spp8bdpuayp
         fields = line.split('^')
         vals = [convert(f) for f in fields[:field_count]]
         curs.execute(query, vals)
